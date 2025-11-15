@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contoh Tabel dan List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    :root {
+      --white-color: #fff;
+      --dark-color: #000;
+      --primary-color: #ff0000;
+      --gray-color: #D3D3D3;
+      --font-size-m: 1.12rem;
+      --font-size-xl: 2rem;
+      --font-weight-semibold: 600;
+      --border-radius-m: 30px;
+      --site-max-width: 1300px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* Navbar Styles */
+    header {
+      position: fixed;
+      width: 100%;
+      z-index: 5;
+      background: var(--primary-color);
+      top: 0;
+    }
+
+    .section-content {
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: var(--site-max-width);
+    }
+
+    header .navbar {
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar .nav-logo .logo-text {
+      color: var(--white-color);
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-semibold);
+    }
+
+    .navbar .nav-menu {
+      display: flex;
+      gap: 10px;
+    }
+
+    .navbar .nav-menu .nav-link {
+      padding: 10px 18px;
+      color: var(--white-color);
+      font-size: var(--font-size-m);
+      border-radius: var(--border-radius-m);
+      transition: 0.3s ease-in-out;
+    }
+
+    .navbar .nav-menu .nav-link:hover {
+      color: var(--primary-color);
+      background-color: var(--dark-color);
+    }
+
+    /* Body Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, var(--primary-color), var(--white-color));
+      margin: 0;
+      padding: 20px;
+      padding-top: 100px;
+      color: #000000;
+    }
+
+    h1 {
+      text-align: center;
+      color: red;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #ff3e3e;
+      color: white;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-top: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      margin-bottom: 10px;
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar-->
+  <header>
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">📺 Youtube View</h2>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="Login1.html" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="Registrasi1.html" class="nav-link">Register</a>
+        </li>
+        <li class="nav-item">
+          <a href="video-page.html" class="nav-link">Video</a>
+        </li>
+        <li>
+          <a href="call-center-page.html" class="nav-link">Call Center</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Contoh Tabel dan Daftar</h1>
+
+  <!-- TABEL -->
+  <section>
+    <h2 class="section-title">Peningkatan Views Video Tabola Bale</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tanggal</th>
+          <th>Views</th>
+          <th>Peningkatan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12-10-2025</td>
+          <td>235.321.911 - 238.285.120</td>
+          <td>+ 2.96 Juta</td>
+        </tr>        
+        <tr>
+          <td>11-10-2025</td>
+          <td>232.174.073 - 235.321.911</td>
+          <td>+ 3.14 Juta</td>
+        </tr>
+        <tr>
+          <td>10-10-2025</td>
+          <td>229.411.177 - 232.174.073</td>
+          <td>+ 2.76 Juta</td>
+        </tr>
+        <tr>
+          <td>09-10-2025</td>
+          <td>226.859.890 - 229.411.177</td>
+          <td>+ 2.55 Juta</td>
+        </tr>
+        <tr>
+          <td>08-10-2025</td>
+          <td>224.280.649 - 226.859.890</td>
+          <td>+ 2.57 Juta</td>
+        </tr>
+        <tr>
+          <td>07-10-2025</td>
+          <td>221.749.845 - 224.280.649</td>
+          <td>+ 2.53 Juta</td>
+        </tr>
+        <tr>
+          <td>06-10-2025</td>
+          <td>219.118.995 - 221.749.845</td>
+          <td>+ 2.63 Juta</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+    <!-- ORDERED LIST -->
+  <section>
+    <h2 class="section-title">Langkah-langkah menaikkan views video</h2>
+    <ol>
+      <li>Optimalkan judul dan thumbnail agar menarik dan menggugah rasa penasaran.</li>
+      <li>Gunakan deskripsi yang jelas dan sertakan kata kunci yang relevan.</li>
+      <li>Tambahkan tag (hashtag) yang tepat untuk membantu algoritma menemukan videomu.</li>
+      <li>Upload secara konsisten pada jadwal yang teratur.</li>
+      <li>Promosikan video di media sosial, grup, atau komunitas yang sesuai.</li>
+      <li>Gunakan fitur playlist agar penonton tetap menonton video lain di channel-mu.</li>
+      <li>Ajak penonton untuk berinteraksi (like, comment, share, subscribe).</li>
+      <li>Analisis performa video melalui statistik agar tahu apa yang paling disukai penonton.</li>
+    </ol>
+  </section>
+
+  <!-- UNORDERED LIST -->
+  <section>
+    <h2 class="section-title">Tips Tambahan Untuk Meningkatkan Views</h2>
+    <ul>
+      <li>Kolaborasi dengan kreator lain.</li>
+      <li>Gunakan clickbait secara cerdas tanpa menipu penonton.</li>
+      <li>Buat intro yang menarik dalam 5 detik pertama.</li>
+      <li>Gunakan end screen dan cards untuk mengarahkan ke video lain.</li>
+      <li>Manfaatkan shorts atau reels untuk menarik penonton baru.</li>
+      <li>Fokus pada kualitas konten, bukan hanya kuantitas.</li>
+      <li>Perhatikan SEO YouTube (kata kunci di judul, deskripsi, dan caption).</li>
+      <li>anggapi komentar untuk membangun komunitas yang aktif.</li>
+    </ul>
+  </section>
+</body>
+</html>
